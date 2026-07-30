@@ -4,6 +4,7 @@
 *.pyc
 *.swp
 .DS_Store
+Thumbs.db
 .atom/
 .build/
 .buildlog/
@@ -28,10 +29,22 @@ migrate_working_dir/
 **/ios/Flutter/.last_build_id
 .dart_tool/
 .flutter-plugins-dependencies
+.flutter-plugins
+.packages
 .pub-cache/
 .pub/
 /build/
 /coverage/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.pem
+*.p12
+**/key.properties
 
 # Symbolication related
 app.*.symbols
