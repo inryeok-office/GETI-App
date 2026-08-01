@@ -1,0 +1,73 @@
+name: "♻️ Refactor"
+description: "외부 동작 변경 없이 코드 구조를 개선하는 작업에 사용합니다."
+title: "[REFACTOR] "
+labels:
+  - "♻️ refactor"
+  - "📋 backlog"
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 작업 배경
+      description: 이 리팩터링이 왜 필요한지 작성해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-problem
+    attributes:
+      label: 현재 문제
+      description: 중복 코드, 과도한 책임, 복잡한 상태 처리 등 개선할 문제를 작성해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: 작업 범위
+      description: 이번 작업에서 다룰 파일, 위젯, 클래스 또는 기능 범위를 작성해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 세부 작업
+      description: 진행할 작업을 체크리스트로 작성해 주세요.
+      placeholder: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 유지되어야 하는 동작
+      description: 리팩터링 전후에 동일하게 유지되어야 하는 외부 동작을 작성해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: 완료 조건
+      description: 작업이 완료되었다고 판단할 수 있는 기준을 작성해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: 영향 및 위험
+      description: 다른 화면, 플랫폼 또는 기능에 미칠 수 있는 영향을 작성해 주세요.
+    validations:
+      required: false
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: 검증 방법
+      description: "검증할 방법을 작성해 주세요. (예: flutter analyze, flutter test, 수동 확인)"
+    validations:
+      required: true

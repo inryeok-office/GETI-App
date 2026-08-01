@@ -1,0 +1,80 @@
+name: "🐛 Bug Report"
+description: "앱이 의도와 다르게 동작하는 문제를 제보할 때 사용합니다."
+title: "[BUG] "
+labels:
+  - "🐛 bug"
+  - "📝 ready"
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 버그 설명
+      description: 어떤 문제가 발생했는지 명확하고 간결하게 설명해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: 재현 절차
+      description: 문제를 재현하는 단계를 순서대로 작성해 주세요.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 기대 동작
+      description: 원래 어떻게 동작해야 하는지 작성해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: 실제 동작
+      description: 실제로 어떻게 동작했는지 작성해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 실행 환경
+      description: |
+        재현에 필요한 환경 정보를 작성해 주세요.
+        예: Flutter/Dart 버전, 대상 플랫폼, 기기 또는 에뮬레이터,
+        OS 버전, Debug/Profile/Release 모드, 브랜치 또는 커밋
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 로그
+      description: |
+        관련 오류 메시지나 로그를 붙여 넣어 주세요.
+        Token, Password, 서명 키 등 민감 정보는 반드시 제거해 주세요.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 스크린샷 또는 화면 녹화
+      description: 문제를 확인할 수 있는 이미지나 영상을 첨부해 주세요.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 추가 정보
+      description: 발생 빈도, 최초 발생 시점 등 참고할 내용이 있다면 작성해 주세요.
+    validations:
+      required: false
