@@ -1,0 +1,94 @@
+name: "✨ Feature Request"
+description: "새로운 기능이나 기존 기능의 개선을 제안할 때 사용합니다."
+title: "[FEAT] "
+labels:
+  - "✨ feature"
+  - "📋 backlog"
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 기능 배경 또는 문제
+      description: 이 기능이 왜 필요한지, 어떤 문제를 해결하는지 작성해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: 사용자 관점의 요구사항
+      description: 가능하다면 사용자 관점에서 필요한 기능과 얻는 가치를 작성해 주세요.
+      placeholder: |
+        As a (사용자 유형)
+        I want (원하는 기능)
+        So that (얻고자 하는 가치)
+    validations:
+      required: false
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: 제안하는 해결 방법
+      description: 기대하는 동작이나 구현 아이디어를 작성해 주세요.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target-platform
+    attributes:
+      label: 대상 플랫폼
+      description: 이 기능이 적용될 플랫폼을 선택해 주세요.
+      multiple: true
+      options:
+        - Android
+        - iOS
+        - Web
+        - Windows
+        - macOS
+        - Linux
+        - 전체 플랫폼
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 상세 요구사항
+      description: 세부 동작과 예외 상황을 작성해 주세요.
+    validations:
+      required: false
+
+  - type: textarea
+    id: states
+    attributes:
+      label: 로딩 · 에러 · 빈 상태
+      description: 데이터를 다루는 기능이라면 각 상태를 어떻게 보여줄지 작성해 주세요.
+    validations:
+      required: false
+
+  - type: textarea
+    id: design
+    attributes:
+      label: 디자인 참고
+      description: Figma 링크, 스크린샷 등 참고할 디자인이 있다면 첨부해 주세요.
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: 완료 조건
+      description: 기능이 완료되었다고 판단할 수 있는 기준을 체크리스트로 작성해 주세요.
+      placeholder: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 추가 정보
+      description: 고려한 대안이나 그 밖의 참고 사항을 작성해 주세요.
+    validations:
+      required: false
